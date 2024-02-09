@@ -1,0 +1,9 @@
+<ng-container >
+    <div class="centered-container">
+    <div class="centered-content">
+        <div><h1>{{currentExercise}}</h1></div>
+        <div><h1 *ngIf="userAnswer !== ''">{{userAnswer}}</h1></div>
+    </div>
+    <app-mobile-keyboard class="app-mobile-keyboard" (buttonClick)="handleButtonKey($event)"></app-mobile-keyboard>
+</div>
+</ng-container>
